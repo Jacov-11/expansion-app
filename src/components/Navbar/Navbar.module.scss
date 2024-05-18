@@ -3,13 +3,13 @@
 $test-color: blue;
 
 .navbarContainer {
+    background-color: white;
     height: 114px;
     padding: 0 80px;
     @media (max-width: $mobile-screen-size) {
         padding: 0 16px;
     }
     .navbar {
-        background-color: white;
         padding: 16px 32px;
         @media (max-width: $mobile-screen-size) {
             padding: 16px 0;
@@ -50,12 +50,13 @@ $test-color: blue;
                     margin-left: initial;
                 }
                 z-index: -1;
-                transition: transform 0.6s ease;
+                transition: transform 0.6s ease, box-shadow 0.6s ease;
                 transform: translateY(-100%);
             }
 
             &.show {                
                 transform: translateY(0);
+                box-shadow: 0 1px 16px $primary-color;
             }
         }
 
@@ -77,10 +78,19 @@ $test-color: blue;
                 height: 1.5px;
                 width: 44px;
                 background-color: $primary-color;
+                transition: background-color 0.3s ease;
             }
 
             @media (min-width: 1260px) {
                 display: none;
+            }
+            transition: background-color 0.3s ease;
+
+            &:hover, &.show {
+                background-color: $primary-color;
+                span {
+                    background-color: white;
+                }
             }
         }
     }
