@@ -2,9 +2,38 @@
 
 $test-color: blue;
 
-.test {
-    color: $test-color;
+.navbarContainer {
+    padding: 0 80px;
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .menuLeft {
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+            gap: 24px;
+        }
+    }
 }
-.test2 {
-    color: $primary-color;
+
+.navLink {
+    position: relative;
+    padding-bottom: 8px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1.5px;
+        background-color: $primary-color;
+        transition: width 0.3s ease;
+      }
+
+    &:hover::after,
+    &:focus::after {
+        width: 100%;
+    }
 }
