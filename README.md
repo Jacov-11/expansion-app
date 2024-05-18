@@ -1,6 +1,6 @@
 # Mon Projet Expansion React
 
-Ceci est une configuration de base pour un projet React utilisant Vite, TypeScript et Sass.
+Ceci est une configuration de base pour un projet Nextjs utilisant React, TypeScript et Sass.
 
 ## Prérequis
 
@@ -15,7 +15,7 @@ Ceci est une configuration de base pour un projet React utilisant Vite, TypeScri
    git clone https://github.com/votre-nom-utilisateur/mon-projet-vite-react.git
    cd mon-projet-vite-react
    ```
-   
+
 2. Installez les dépendances :
 
    ```sh
