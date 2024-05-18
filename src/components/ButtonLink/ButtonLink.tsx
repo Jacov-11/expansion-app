@@ -10,7 +10,7 @@ interface ButtonLinkProps {
 
 export default function ButtonLink({ href, text, iconUrl, iconAlt }: ButtonLinkProps) {
     return (
-      <a href={href} className={styles.buttonLink}>
+      <a href={href} role="navigation" className={styles.buttonLink}>
         {iconUrl && iconAlt && <img src={iconUrl} className={styles.icon} alt={iconAlt} />}
         {text}
       </a>
