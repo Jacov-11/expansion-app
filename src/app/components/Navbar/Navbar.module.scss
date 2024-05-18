@@ -1,0 +1,10 @@
+@import '@/styles/variables';
+
+$test-color: blue;
+
+.test {
+    color: $test-color;
+}
+.test2 {
+    color: $primary-color;
+}
