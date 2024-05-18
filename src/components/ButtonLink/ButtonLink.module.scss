@@ -1,0 +1,23 @@
+@import '@/styles/variables';
+
+.buttonLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 30px;
+    background-color: $primary-color;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid $primary-color;
+
+    &:hover {
+        background-color: white;
+        color: $primary-color;
+    }
+
+    .icon {
+        height: 18px;
+    }
+}

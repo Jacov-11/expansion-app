@@ -4,28 +4,36 @@ $test-color: blue;
 
 .navbarContainer {
     padding: 0 80px;
-    div {
+    .navbar {
+        padding: 16px 32px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        .menuLeft {
+
+        .brandLogo {
+            margin-right: 40px;
+        }
+
+        .menuLeft, 
+        .menuRight {
             display: flex;
-            align-items: center;
-            margin-left: 40px;
+            align-items: center;            
             gap: 24px;
+        }
+
+        .menuRight {
+            margin-left: auto;
         }
     }
 }
 
 .navLink {
     position: relative;
-    padding-bottom: 8px;
 
     &::after {
         content: '';
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -8px;
         width: 0;
         height: 1.5px;
         background-color: $primary-color;
