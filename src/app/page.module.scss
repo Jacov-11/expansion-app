@@ -25,6 +25,14 @@
         }
     }
     .imageSection {
-
+        position: absolute;
+        top: -13.26388888888889vw;
+        right: -13.402777777777779vw;
+        z-index: -3;
+        background-image: url('/background-home.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 90.69444444444444vw;
+        height: 74.02777777777777vw;
     }
 }
