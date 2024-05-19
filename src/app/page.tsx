@@ -7,13 +7,13 @@ import { useGsapAnimation } from '@/hooks/useGsapAnimation';
 
 export default function Home() {
   const infoSectionRef = useGsapAnimation(
-    { opacity: 0, scale: 0.8 },
-    { opacity: 1, scale: 1, duration: 2, ease: 'power2.inOut' }
+    { opacity: 0, x: -300 },
+    { opacity: 1, x: 0, duration: 1, ease: 'power2.inOut' }
   );
 
   const imageSectionRef = useGsapAnimation(
     { opacity: 0 },
-    { opacity: 1, duration: 3, ease: 'power2.inOut' }
+    { opacity: 1, duration: 2, ease: 'power2.inOut' }
   );
 
   return (
