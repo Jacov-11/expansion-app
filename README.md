@@ -1,19 +1,19 @@
-# Mon Projet Expansion React
+# Expansion App
 
-Ceci est une configuration de base pour un projet Nextjs utilisant React, TypeScript et Sass.
+Ceci est projet de base utilisant Nextjs, React, TypeScript, Sass et GSAP.
 
 ## Prérequis
 
-- Node.js (version 14 ou supérieure)
-- npm (version 6 ou supérieure)
+- Node.js (version 20.13.1 ou supérieure)
+- npm (version 10.5.2 ou supérieure)
 
 ## Installation
 
 1. À l'aide d'une invite de commande, clonez le dépôt et naviguez jusqu'au projet :
 
    ```sh
-   git clone https://github.com/votre-nom-utilisateur/mon-projet-vite-react.git
-   cd mon-projet-vite-react
+   git clone https://github.com/Jacov-11/expansion-app.git
+   cd expansion-app
    ```
 
 2. Installez les dépendances :
