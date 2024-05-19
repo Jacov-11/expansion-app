@@ -9,7 +9,7 @@
     border-radius: 30px;
     background-color: $primary-color;
     color: white;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease-in-out;
     border: 1px solid $primary-color;
     max-width: fit-content;
 
@@ -21,4 +21,5 @@
     .icon {
         height: 18px;
     }
+      
 }
