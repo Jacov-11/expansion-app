@@ -83,7 +83,7 @@ $test-color: blue;
                 transition: background-color 0.3s ease;
             }
 
-            @media (min-width: 1260px) {
+            @media (min-width: $large-screen-size) {
                 display: none;
             }
             transition: background-color 0.3s ease;
@@ -113,7 +113,8 @@ $test-color: blue;
       }
 
     &:hover::after,
-    &:focus::after {
+    &:focus::after,
+    &.active::after {
         width: 100%;
     }
 }
