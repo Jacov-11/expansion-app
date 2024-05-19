@@ -52,20 +52,20 @@ $test-color: blue;
                     margin-left: initial;
                 }
                 z-index: -1;
-                transition: transform 0.6s ease, box-shadow 0.6s ease;
+                transition: transform 0.6s ease;
                 transform: translateY(-100%);
+                box-shadow: 0 1px 16px $primary-color;
             }
 
             &.show {                
-                transform: translateY(0);
-                box-shadow: 0 1px 16px $primary-color;
+                transform: translateY(0);                
             }
         }
 
         .collapseMenuButton {
             cursor: pointer;
             border: none;
-            border-radius: 4px;
+            border-radius: $border-radius-1;
             height: 44px;
             width: 88px;
             background-color: white;

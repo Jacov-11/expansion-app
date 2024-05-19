@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "./Navbar.module.scss";
 import ButtonLink from '@/components/ButtonLink/ButtonLink';
+import { useGsapAnimation } from '@/hooks/useGsapAnimation';
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -12,11 +13,16 @@ export default function Navbar() {
         setMenuOpen(!menuOpen);
     };
 
+    const brandLogoRef = useGsapAnimation(
+        { opacity: 0, x: -300 },
+        { opacity: 1, x: 0, duration: 1, ease: 'power2.inOut' }
+      );
+
 
     return (
         <header className={styles.navbarContainer}>
             <div className={styles.navbar}>
-                <a href="/" className={styles.brandLogo}>
+                <a href="/" className={styles.brandLogo} ref={brandLogoRef}>
                     <Image
                     src="/brand-logo.svg"
                     alt="Logo de la compagnie"
