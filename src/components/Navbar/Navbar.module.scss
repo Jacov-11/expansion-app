@@ -3,9 +3,11 @@
 $test-color: blue;
 
 .navbarContainer {
-    background-color: white;
     height: 114px;
     padding: 0 80px;
+    @media (max-width: $large-screen-size) {
+        background-color: white;
+    }
     @media (max-width: $mobile-screen-size) {
         padding: 0 16px;
     }
@@ -35,7 +37,7 @@ $test-color: blue;
             .menuRight {
                 margin-left: auto;
             }
-            @media (max-width: 1260px) {
+            @media (max-width: $large-screen-size) {
                 padding: 16px 0;
                 background-color: white;
                 position: absolute;
