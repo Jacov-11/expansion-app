@@ -18,9 +18,9 @@
     line-height: 21px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: $font-weigth-bold;
     main {
-      padding: 0 80px;
+      padding: 8px 80px;
     }
   }
 
@@ -33,5 +33,21 @@
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  h1 {
+    line-height: 49px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $font-weigth-bold;
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    line-height: 27px;
+    font-family: 'Montserrat', sans-serif; // Devrait être Azo Sans, mais c'est une police de caractère payante.
+    font-size: 18px;
+    font-weight: $font-weigth-normal;
+    margin-bottom: 24px;
   }
   
