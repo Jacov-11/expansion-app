@@ -62,11 +62,10 @@ $test-color: blue;
         .collapseMenuButton {
             cursor: pointer;
             border: none;
-            border-radius: $border-radius-1;
             height: 44px;
             width: 88px;
             background-color: white;
-            border: 1px solid $primary-color;
+            border: none;
             margin-left: auto;
             display: flex;
             flex-direction: column;
@@ -77,18 +76,22 @@ $test-color: blue;
                 height: 1.5px;
                 width: 44px;
                 background-color: $primary-color;
-                transition: background-color 0.3s ease;
+                transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
             }
 
             @media (min-width: $large-screen-size) {
                 display: none;
             }
-            transition: background-color 0.3s ease;
 
-            &:hover, &.show {
-                background-color: $primary-color;
-                span {
-                    background-color: white;
+            &.show {
+                span:nth-child(1) {
+                    transform: rotate(45deg) translate(8px, 8px);
+                }
+                span:nth-child(3) {
+                    transform: rotate(-45deg) translate(8px, -8px);
+                }
+                span:nth-child(2) {
+                    opacity: 0;
                 }
             }
         }
