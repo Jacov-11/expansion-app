@@ -4,18 +4,15 @@ $test-color: blue;
 
 .navbarContainer {
     height: 114px;
-    padding: 0 80px;
+    padding: 16px 112px;
+    margin-bottom: 8px;
     @media (max-width: $large-screen-size) {
         background-color: white;
     }
     @media (max-width: $mobile-screen-size) {
-        padding: 0 16px;
+        padding: 16px 16px;
     }
     .navbar {
-        padding: 16px 32px;
-        @media (max-width: $mobile-screen-size) {
-            padding: 16px 0;
-          }
         display: flex;
         align-items: center;
 
