@@ -40,7 +40,7 @@ export default function Navbar() {
                         <ButtonLink href="#" text="Prendre un rendez-vous" />
                     </div>
                 </div>                
-                <button className={`${styles.collapseMenuButton} ${menuOpen ? styles.show : ''}`} onClick={toggleMenu}>
+                <button role="navigation" className={`${styles.collapseMenuButton} ${menuOpen ? styles.show : ''}`} onClick={toggleMenu}>
                     <span></span>
                     <span></span>
                     <span></span>
